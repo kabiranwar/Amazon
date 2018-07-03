@@ -13,7 +13,7 @@ Library  SeleniumLibrary
 Should be able to search for product
     [Tags]  Smoke  products
     open browser  https://www.amazon.com/  chrome
-    #sleep  3s
+    Wait Until Page Contains  Your Amazon.com
     #click image  Save big on security and surveillance systems
    input Text  id=twotabsearchtextbox  Ferrari 458
     sleep  3s
