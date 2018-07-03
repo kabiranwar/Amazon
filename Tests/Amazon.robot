@@ -8,7 +8,7 @@ Library  Selenium2Library
 *** Test Cases ***
 User must sign on to check out
     [Documentation]  this is some basic info about test
-    [tags]  smoke
+    [tags]  smoke useredit
     Open Browser  http://www.amazon.com  chrome
     Wait Until Page Contains  Your Amazon.com
     Input Text  id=twotabsearchtextbox  Ferrari 458
