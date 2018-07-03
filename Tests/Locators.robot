@@ -11,6 +11,7 @@ Library  SeleniumLibrary
 *** Test Cases ***
 
 Should be able to search for product
+    [Tags]  Smoke  products
     open browser  https://www.amazon.com/  chrome
     #sleep  3s
     #click image  Save big on security and surveillance systems
