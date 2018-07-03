@@ -8,7 +8,7 @@ Library  Selenium2Library
 *** Test Cases ***
 User must sign on to check out
     [Documentation]  this is some basic info about test
-    [tags]  smoke Test  New   products1
+    [tags]  smoke useredit
     Open Browser  http://www.amazon.com  chrome
     Wait Until Page Contains  Your Amazon.com
     Input Text  id=twotabsearchtextbox  Ferrari 458
@@ -19,7 +19,6 @@ User must sign on to check out
     Click Button  id=add-to-cart-button
     Wait Until Page Contains  Added to Cart
     Click Link  id=hlb-ptc-btn-native
-    #Page Should Contain Element  signInSubmit
-
-
-
+    Page Should Contain Element  signInSubmit
+    sleep  3
+    Close Browser
